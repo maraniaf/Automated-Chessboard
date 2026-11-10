@@ -1,13 +1,15 @@
 #ifndef PIECE_H
 #define PIECE_H
 
+enum class Color { White, Black };
+
 class Piece {
 private:
-    bool isWhite;
+    Color pieceColor;
 
-public: 
-    Piece(bool white);
-
+public:
+    Piece(Color chosenColor);
+    Color getColor() const;
 };
 
 #endif

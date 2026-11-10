@@ -19,20 +19,20 @@ class Piece { [defines the class]
 
     - For example, rook.h describes what a rook can do, and rook.cpp contains the code that checks its movement.
 
-# . CODE FOR MAIN: 
+#  CODE FOR MAIN: 
 - #include tells C++ to bring in declarations from a header.
 
 - <iostream> is a standard C++ header that lets us use tools for input and output, such as printing text. kinda like imports in java 
 
 
-# . This prints hello word 
+#  This prints hello word 
 int main() {
     std::cout << "Hello, World!" << std::endl;
     return 0;
 }
 
-# . You compile whenever you want your code changes included in the program.
+#  You compile whenever you want your code changes included in the program.
 - Changed the code? Compile again, then run.
 - if running the same unchanged program, just use ./chessboard.
 
-# . printing a bool shows 1 for true and 0 for false
+#  printing a bool shows 1 for true and 0 for false

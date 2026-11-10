@@ -33,3 +33,14 @@ Gantry controller executes approved moves.
 - Arduino uses setup() once and loop() repeatedly. We’ll handle that when we connect the hardware.
 - We’ll have Board, Game, and piece classes such as Rook, Bishop, and Pawn. Each individual piece is an object of its class.
 
+D2: Understanding C++ and building
+
+# Today I changed Piece to use enum class Color so I can write Color::White or Color::Black instead of true or false. I added a private field called pieceColor to store each piece’s color. In piece.cpp, I wrote the constructor that sets the color and getColor() const, which reads it. In main.cpp, I created a black piece and added an if statement to check its color.
+
+1. main.cpp is where the program starts. std::cout prints a message, and return 0; reports that the program finished successfully. I practiced bool and if/else here.
+
+2. piece.h defines Color and the Piece class. The header guard (#ifndef, #define, #endif) keeps the header from being processed twice while compiling a source file.
+
+3. enum class Color { White, Black }; gives us the names Color::White and Color::Black. I switched from a bool so I can read the color directly.
+
+4. Color pieceColor; is the private field where each piece stores its own color. The public constructor sets it, and the public getColor() const function reads it without changing the piece. Both functions are implemented in piece.cpp.
